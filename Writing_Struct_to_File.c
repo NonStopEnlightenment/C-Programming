@@ -1,10 +1,10 @@
+#include <stdio.h>
 struct Employee
 {
     int id;
     char name[25];
     float salary;
 };
-#include <stdio.h>
 int main()
 {
     FILE* fp;       //File Pointer 
