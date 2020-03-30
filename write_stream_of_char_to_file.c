@@ -11,8 +11,8 @@ int main()
 	}
 	else
 	{
-    	scanf("%[^\n]",a);
-    	fputs(a,fp);          //Writing content to the file
+		scanf("%[^\n]",a);
+		fputs(a,fp);          //Writing content to the file
 	}
 	fclose(fp);               //Closing the File
 	return 0;
