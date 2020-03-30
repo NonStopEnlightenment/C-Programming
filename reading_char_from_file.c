@@ -1,9 +1,9 @@
 #include<stdio.h>
 int main()
 {
-	FILE *fp;
+	FILE *fp;			//File Pointer
 	char c;
-	fp=fopen("sample.txt","r");
+	fp=fopen("sample.txt","r");	//Openning the File in read mode
 
 	if(fp==NULL)
 	{
@@ -13,7 +13,7 @@ int main()
 	{
 		while(1)
 		{
-				c=fgetc(fp);
+				c=fgetc(fp);	//reading char by char from the file
 				if(!feof(fp))
 				{
 					printf("%c",c);
@@ -24,7 +24,7 @@ int main()
 				}
 		}
 	}
-	fclose(fp);
+	fclose(fp);			//Closing the file
 	return 0;
 }
 
